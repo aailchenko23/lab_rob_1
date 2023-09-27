@@ -1,0 +1,19 @@
+public class AirplaneThree {
+    private double speed;
+    private int passenger;
+    private String model;
+
+    public AirplaneThree(double speed, int passenger, String model) {
+        this.speed = speed;
+        this.passenger = passenger;
+        this.model = model;
+    }
+
+    public void Information() {
+        System.out.println("AirplaneThree - Model: " + model + ", Speed: " + speed + " km/h, Passengers: " + passenger);
+    }
+
+    public double calculateTravelTime(double distance) {
+        return distance / speed;
+    }
+}
