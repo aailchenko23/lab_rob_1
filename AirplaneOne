@@ -1,0 +1,17 @@
+public class AirplaneOne {
+ private double speed;
+ private int passenger;
+ private String model;
+
+ public AirplaneOne(double speed,int passenger,String model) {
+  this.speed = speed;
+  this.passenger=passenger;
+  this.model=model;
+ }
+ public void Information() {
+  System.out.println("AirplaneOne - Model: " + model + ", Speed: " + speed + " km/h, Passengers: " + passenger);
+ }
+ public double calculateDistance(double time) {
+  return speed * time;
+ }
+}
