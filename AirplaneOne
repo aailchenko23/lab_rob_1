@@ -1,16 +1,19 @@
-public class AirplaneOne {
- private double speed;
- private int passenger;
- private String model;
-
+public сlass AirplaneOne {
+//змінні екземпляра класу
+ public double speed;
+ public int passenger;
+ public String model;
+//генерований конструктор
  public AirplaneOne(double speed,int passenger,String model) {
   this.speed = speed;
   this.passenger=passenger;
   this.model=model;
  }
+//виводить інформацію на консоль і не повертає жодного значення (void)
  public void Information() {
   System.out.println("AirplaneOne - Model: " + model + ", Speed: " + speed + " km/h, Passengers: " + passenger);
  }
+//типізований метод що повертає значення  результату  відстані
  public double calculateDistance(double time) {
   return speed * time;
  }
