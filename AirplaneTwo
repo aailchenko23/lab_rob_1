@@ -1,18 +1,19 @@
 public class AirplaneTwo {
+//змінні екземпляра класу
     private double speed;
     private int passenger;
     private String model;
-
+ //генерований конструктор
     public AirplaneTwo(double speed, int passenger, String model) {
         this.speed = speed;
         this.passenger = passenger;
         this.model = model;
     }
-
+//виводить інформацію на консоль і не повертає жодного значення (void)
     public void Information() {
         System.out.println("AirplaneTwo - Model: " + model + ", Speed: " + speed + " km/h, Passengers: " + passenger);
     }
-
+// Метод для обчислення витрат пального на певну відстань
     public int calculateFuelConsumption(int distance) {
         return distance / (int) speed;
     }
