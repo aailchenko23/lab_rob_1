@@ -1,7 +1,7 @@
 public class AirplaneThree {
-    private double speed;
-    private int passenger;
-    private String model;
+    public double speed;
+    public int passenger;
+    public String model;
 
     public AirplaneThree(double speed, int passenger, String model) {
         this.speed = speed;
