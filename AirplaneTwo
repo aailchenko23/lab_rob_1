@@ -1,8 +1,8 @@
 public class AirplaneTwo {
 //змінні екземпляра класу
-    private double speed;
-    private int passenger;
-    private String model;
+    public double speed;
+    public int passenger;
+    public String model;
  //генерований конструктор
     public AirplaneTwo(double speed, int passenger, String model) {
         this.speed = speed;
