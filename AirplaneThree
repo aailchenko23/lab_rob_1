@@ -1,18 +1,19 @@
 public class AirplaneThree {
+ //змінні екземпляра класу
     public double speed;
     public int passenger;
     public String model;
-
+//генерований конструктор
     public AirplaneThree(double speed, int passenger, String model) {
         this.speed = speed;
         this.passenger = passenger;
         this.model = model;
     }
-
+//виводить інформацію на консоль і не повертає жодного значення (void)
     public void Information() {
         System.out.println("AirplaneThree - Model: " + model + ", Speed: " + speed + " km/h, Passengers: " + passenger);
     }
-
+// Метод для розрахунку часу подорожі на певну відстань
     public double calculateTravelTime(double distance) {
         return distance / speed;
     }
